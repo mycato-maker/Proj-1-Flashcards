@@ -28,7 +28,7 @@ int main(){
     std::string definition;
     std::string answer;
 
-    CardGenerator(m);
+    CardGenerator(m, card, cards);
 
     int mode;
     while (true)

@@ -4,11 +4,7 @@
 #include <unordered_map>
 #include "class.h"
 
-std::unordered_map<std::string, Flashcards> card;
-std::vector<Flashcards> cards = {};
-
-
-void CardGenerator(int m) {
+void CardGenerator(int m, std::unordered_map<std::string, Flashcards> &card, std::vector<Flashcards> &cards) {
         for(int i = 1; i < m + 1; i++){
         std::string n = std::to_string(i);
         card[n] = Flashcards();
@@ -22,4 +18,3 @@ void CardGenerator(int m) {
         cards.insert(cards.begin() + (i -1), card[n]);
     }
 }
-
