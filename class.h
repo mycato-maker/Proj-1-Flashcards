@@ -12,5 +12,6 @@ struct Flashcards
 }; 
 
 void CardGenerator(int m, std::unordered_map<std::string, Flashcards> &card, std::vector<Flashcards> &cards);
+void DeckView(const std::vector<Flashcards> &cards);
 
 #endif

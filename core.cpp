@@ -18,3 +18,9 @@ void CardGenerator(int m, std::unordered_map<std::string, Flashcards> &card, std
         cards.insert(cards.begin() + (i -1), card[n]);
     }
 }
+
+void DeckView(const std::vector<Flashcards> &cards) {
+    for(size_t i = 0; i < cards.size(); i++){
+    std::cout << i + 1 << ") " << cards[i].definition << " - " << cards[i].answer << std::endl;
+    }
+}

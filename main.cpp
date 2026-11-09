@@ -29,6 +29,7 @@ int main(){
     std::string answer;
 
     CardGenerator(m, card, cards);
+    DeckView(cards);
 
     int mode;
     while (true)
